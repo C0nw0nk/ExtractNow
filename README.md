@@ -10,3 +10,10 @@ For Windows Torrent users who download with UTorrent qBittorrent etc you can use
 
 You can get extract now from here
 https://www.extractnow.com/#/home
+
+
+# Usage
+
+Simply put your download path inside the script settings
+
+https://github.com/C0nw0nk/ExtractNow/blob/main/extractnow.cmd#L7
