@@ -35,9 +35,9 @@ set extraction_blacklist=*.class, *.ini,*.exe,*.nfo;
 
 :: If you do not want to use extractnow to extract certain file types you can hand them to a external program to extract them like so
 :: zip, rar, 7z are the examples i have created for you
-:: set external_extraction_program=zip;"C:\\Program Files\\WinRAR\\unrar.exe" -o- x "{ArchivePath}" "{Destination}"\r\nrar;"C:\\Program Files\\WinRAR\\unrar.exe" -o- x "{ArchivePath}" "{Destination}"\r\n7z;"C:\\Program Files\\WinRAR\\unrar.exe" -o- x "{ArchivePath}" "{Destination}"\r\n
+set external_extraction_program=zip;"C:\\Program Files\\WinRAR\\unrar.exe" -o- x "{ArchivePath}" "{Destination}"\r\nrar;"C:\\Program Files\\WinRAR\\unrar.exe" -o- x "{ArchivePath}" "{Destination}"\r\n7z;"C:\\Program Files\\WinRAR\\unrar.exe" -o- x "{ArchivePath}" "{Destination}"\r\n
 :: Do not use any external unrar use extractnow built in extractor libraries
-set external_extraction_program=
+:: set external_extraction_program=
 
 :: End Edit DO NOT TOUCH ANYTHING BELOW THIS POINT UNLESS YOU KNOW WHAT YOUR DOING!
 
