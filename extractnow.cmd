@@ -35,9 +35,9 @@ set extraction_blacklist=*.class, *.ini,*.exe,*.nfo;
 
 :: If you do not want to use extractnow to extract certain file types you can hand them to a external program to extract them like so
 :: zip, rar, 7z are the examples i have created for you
-set external_extraction_program=zip;"C:\\Program Files\\WinRAR\\unrar.exe" -o- x "{ArchivePath}" "{Destination}"\r\nrar;"C:\\Program Files\\WinRAR\\unrar.exe" -o- x "{ArchivePath}" "{Destination}"\r\n7z;"C:\\Program Files\\WinRAR\\unrar.exe" -o- x "{ArchivePath}" "{Destination}"\r\n
+::set external_extraction_program=zip;"C:\\Program Files\\WinRAR\\unrar.exe" -o- x "{ArchivePath}" "{Destination}"\r\nrar;"C:\\Program Files\\WinRAR\\unrar.exe" -o- x "{ArchivePath}" "{Destination}"\r\n7z;"C:\\Program Files\\WinRAR\\unrar.exe" -o- x "{ArchivePath}" "{Destination}"\r\n
 :: Do not use any external unrar use extractnow built in extractor libraries
-:: set external_extraction_program=
+set external_extraction_program=
 
 :: End Edit DO NOT TOUCH ANYTHING BELOW THIS POINT UNLESS YOU KNOW WHAT YOUR DOING!
 
@@ -162,7 +162,7 @@ echo Directory List=%new_path%*\r\n >> %settings_file%
 echo Files Exclude Mask=%extraction_blacklist% >> %settings_file%
 echo Search Mask=%search_blacklist% >> %settings_file%
 echo External Commands=%external_extraction_program% >> %settings_file%
-echo Extract Program To Run=cmd /c taskkill /IM extractnow.exe >> %settings_file%
+echo Extract Program To Run= >> %settings_file%
 echo Extract Archives Program To Run= >> %settings_file%
 echo Search Path Last Used= >> %settings_file%
 echo Password List Filename= >> %settings_file%
