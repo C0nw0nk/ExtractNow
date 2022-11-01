@@ -13,10 +13,6 @@ ExtractNow Installed
 
 https://www.extractnow.com/
 
-WinRar Installed
-
-https://www.rarlab.com/
-
 # Usage
 
 Simply put your download path inside the script settings
