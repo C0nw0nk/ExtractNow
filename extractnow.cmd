@@ -43,8 +43,6 @@ set external_extraction_program=
 
 set root_path=%~dp0
 
-set root_file_name_and_extension=%~nx0
-
 color 0A
 %*
 set title=C0nw0nk - Automatic Archive Extraction script
@@ -52,7 +50,7 @@ TITLE %title%
 
 :start_loop
 if "%~1"=="" (
-start /wait /B %root_path%%root_file_name_and_extension% go
+start /wait /B "" "%~dp0%~nx0" go 2^>Nul
 ) else (
 goto begin
 )
